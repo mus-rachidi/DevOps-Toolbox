@@ -18,5 +18,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo usermod -aG docker $USER
 
 # Restart the Docker daemon to apply the changes
-sudo systemctl restart docker
+sudo systemctl restart docker   
 

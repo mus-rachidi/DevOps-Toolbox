@@ -19,4 +19,3 @@ alias docker-rm-all='docker rm $(docker ps -a -q)'
 alias docker-rmi-all='docker rmi $(docker images -q)'
 alias docker-stop-all='docker stop $(docker ps -q)'
 alias docker-prune='docker system prune -af'
-

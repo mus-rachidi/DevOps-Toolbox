@@ -1,23 +1,27 @@
 #!/bin/bash
 
-# read commit message from user input
-echo "Enter commit message:"
+# Define color codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No color
+
+# Read commit message from user input
+echo -e "${GREEN}Enter commit message:${NC}"
 read commit_message
 
-# read branch name from user input
-echo "Enter branch name:"
+# Read branch name from user input
+echo -e "${GREEN}Enter branch name:${NC}"
 read branch_name
 
-# read remote repository name from user input
-echo "Enter remote repository name:"
+# Read remote repository name from user input
+echo -e "${GREEN}Enter remote repository name:${NC}"
 read remote_name
 
-# add all files to the repository
+# Add all files to the repository
 git add .
 
-# commit the changes with the user input commit message
+# Commit the changes with the user input commit message
 git commit -m "$commit_message"
 
-# push the changes to the specified branch on the remote repository
+# Push the changes to the specified branch on the remote repository
 git push $remote_name $branch_name
-
