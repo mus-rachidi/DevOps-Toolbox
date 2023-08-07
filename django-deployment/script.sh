@@ -2,7 +2,7 @@
 
 # Define variables
 APP_NAME="my-django-app"
-APP_REPO="https://github.com/myusername/my-django-app.git"
+# APP_REPO="https://github.com/myusername/my-django-app.git"
 APP_DIR="/var/www/my-django-app"
 ENV_FILE="/var/www/my-django-app/.env"
 DOCKER_IMAGE_NAME="my-django-app-image"
@@ -14,7 +14,7 @@ deploy() {
   echo "Deploying $APP_NAME..."
 
   # Pull the latest code from the repository
-  git clone $APP_REPO $APP_DIR
+  # git clone $APP_REPO $APP_DIR
 
   # Go to the application directory
   cd $APP_DIR
